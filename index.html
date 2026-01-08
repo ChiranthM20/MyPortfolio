@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chiranth M | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo gold-text">PORTFOLIO</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <button onclick="openResume()" class="btn-gold">Resume</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>CHIRANTH M</h1>
+    <p>3rd Year CSE Student | <span id="typewriter"></span><span class="cursor-blink">|</span></p>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="reveal">
+    <h2 class="section-label gold-text">ABOUT ME</h2>
+    <div class="about-container">
+      <div class="profile-card glass">
+        <img src="images/me.jpg" alt="Chiranth M">
+        <div class="profile-info">
+          <h3>Chiranth M</h3>
+          <p class="gold-text">Backend Enthusiast</p>
+          <div class="mini-tags">
+            <span>Java</span><span>SQL</span><span>DSA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text glass">
+       <p>
+        Passionate learner and aspiring software developer from Garden City University with hands-on experience in Java, Python, and SQL. I enjoy creating efficient, well-structured applications and exploring backend development with MySQL, Spring Boot, and modern development tools. Currently improving my skills in DSA and working on a full-stack backend project using Java and Spring Boot.
+       </p>
+      </div>
+
+
+        <div class="about-stats">
+          <div class="stat-box glass">
+            <h2 class="gold-text">300+</h2>
+            <p>DSA Solved</p>
+          </div>
+          <div class="stat-box glass">
+            <h2 class="gold-text">A+</h2>
+            <p>Academic Grade</p>
+          </div>
+          <div class="stat-box glass">
+            <h2 class="gold-text">Java</h2>
+            <p>Primary Stack</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2 class="section-label gold-text">TECHNICAL TOOLKIT</h2>
+    <div class="grid-container">
+      <div class="card glass">
+        <h3 class="gold-text">Languages</h3>
+        <p>Java (Core & Advanced), Python, SQL (MySQL)</p>
+      </div>
+      <div class="card glass">
+        <h3 class="gold-text">Frameworks</h3>
+        <p>Java Swing, JDBC, Spring Boot (Learning), Hibernate</p>
+      </div>
+      <div class="card glass">
+        <h3 class="gold-text">Tools</h3>
+        <p>Git, GitHub, Postman, IntelliJ, VS Code</p>
+      </div>
+      <div class="card glass">
+        <h3 class="gold-text">Core CS</h3>
+        <p>Data Structures, Algorithms, OOPS, DBMS</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2 class="section-label gold-text">PROJECTS</h2>
+    <div class="grid-container">
+      <div class="card glass">
+        <div class="card-tag">JAVA SWING • MYSQL</div>
+        <h3>Student Management System</h3>
+        <p>A desktop application using Java Swing for the frontend and MySQL for database management. Features secure CRUD operations and attendance tracking.</p>
+      </div>
+      <div class="card glass learning-card">
+        <div class="card-tag">SPRING BOOT (IN PROGRESS)</div>
+        <h3>RESTful API Development</h3>
+        <p>Currently building a backend system to handle user authentication and data management using Spring Data JPA and Maven.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates" class="reveal">
+    <h2 class="section-label gold-text">CERTIFICATES</h2>
+    <div class="grid-container">
+      <div class="cert-card glass">
+        <h3>Backend with Java</h3>
+        <img src="images/java.png" onclick="openImg(this.src)">
+      </div>
+      <div class="cert-card glass">
+        <h3>Servlets & JSP – Infosys</h3>
+        <img src="images/infosys.png" onclick="openImg(this.src)">
+      </div>
+      <div class="cert-card glass">
+        <h3>Data Science – Cisco</h3>
+        <img src="images/cisco.png" onclick="openImg(this.src)">
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="imgPopup" class="popup" onclick="closeImg()">
+  <span class="close-btn">&times;</span>
+  <img id="popup-img">
+</div>
+
+<div id="resumePopup" class="resume-popup">
+  <div class="resume-popup-content">
+    <span class="close-btn" onclick="closeResume()">&times;</span>
+    <iframe src="resume.pdf"></iframe>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 | Designed by Chiranth M</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
